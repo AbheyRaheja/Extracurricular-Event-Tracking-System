@@ -1,19 +1,20 @@
-# CCell Web App
+# Extracurricular Event Tracking System (EETS)
 
-Welcome to the CCell Web App! This app is designed to provide a seamless experience for the admission process at LNMIIT
+Welcome to the LNMIIT EETS! This app is designed to provide a seamless Extra-curricular event tracking system at LNMIIT
 
 ## Features
 
-- Step-wise guide
-- Clear-Instructions
-- Location-Tags
+- Event Management 
+- Event Registration
+- Synchronised Calendar
+- Profile sections
 
 ## Getting Started
 
-To get started with the CCell Web App:
+To get started with the App:
 
 go to the following website:
-[C-CELL Webapp](https://justabhinav.github.io/CCell-webapp/)
+[LNMIIT EETS](https://justabhinav.github.io/)
 
 ## License
 
