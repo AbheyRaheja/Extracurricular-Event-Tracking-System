@@ -88,6 +88,14 @@ img {
   filter: drop-shadow(0px 0px 10px #1e13208a);
 }
 
+#org-button {
+  background-color: #2c046d;
+}
+
+#org-button:hover {
+  background-color: #140232;
+}
+
 .login-btn:hover {
   background-color: #311e50;
 }
