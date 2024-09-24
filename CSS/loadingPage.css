@@ -1,0 +1,126 @@
+:root {
+  --green: #b8d953;
+  --lilac: #b2b2eb;
+  --pink: #bb86e9;
+  --dark-green: #529a91;
+  --peach: #fe96b7;
+  --black: #191819;
+  --grey: #2a292a;
+  --white: #d9d9d9;
+  --violet: #2b1d42;
+}
+
+document {
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #000, #2b1d42, #222a68, #2b1d42, #000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo-img {
+  width: 10rem;
+  height: 10rem;
+  margin: 10rem auto 0;
+  filter: drop-shadow(0, 20, 20, #000);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* 
+.code-block {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  background-color: var(--violet);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200%;
+} */
+
+.loader-page-container {
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.loader-wrap {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-content: center;
+}
+
+/* .loader-3 ---------------------- */
+
+.loader-3 {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  height: 20px;
+}
+
+.loader-3 div {
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--lilac);
+  border-radius: 50%;
+  display: inline-block;
+  animation: loader-3-bounce 1.4s infinite ease-in-out both;
+}
+
+.loader-3 div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.loader-3 div:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes loader-3-bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
