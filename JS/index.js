@@ -2,7 +2,6 @@ var orgButton = document.getElementById("org-login-btn");
 var studentButton = document.getElementById("student-login-btn");
 var mainDiv = document.getElementById("main-container");
 
-
 const generateOrgView = () => `
         
         <div class="dropdown">
@@ -10,7 +9,7 @@ const generateOrgView = () => `
   <select id="Organisations" name="Organizations" class="dropbtn">
     <option value="Organizer">Organizer</option>
   <option value="Faculty">Faculty</option>
-  <option value="Admin">Admin</option>
+  <option value="member of GymKhana">Gym Khana</option>
   <option value="Member of Adminstration">Adminstration</option>
   </select>
 </div>
@@ -77,29 +76,26 @@ const generateStudentView = () => `
     `;
 
 const updateMainContent = (content) => {
-    if (mainDiv) {
-        mainDiv.innerHTML = content;
-    } else {
-        console.error("Main div not found");
-    }
+  if (mainDiv) {
+    mainDiv.innerHTML = content;
+  } else {
+    console.error("Main div not found");
+  }
 };
 
 if (orgButton) {
-    console.log("44")
-    orgButton.addEventListener("click", () => {
-        updateMainContent(generateOrgView());
-    });
-}
-else {
-    console.log("1")
+  console.log("44");
+  orgButton.addEventListener("click", () => {
+    updateMainContent(generateOrgView());
+  });
+} else {
+  console.log("1");
 }
 
 if (studentButton) {
-    studentButton.addEventListener("click", () => {
-        updateMainContent(generateStudentView());
-    });
+  studentButton.addEventListener("click", () => {
+    updateMainContent(generateStudentView());
+  });
+} else {
+  console.log("2");
 }
-else {
-    console.log("2")
-}
-
